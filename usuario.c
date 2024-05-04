@@ -1,24 +1,30 @@
 #include <stdio.h>
+#include <string.h>
 
-int main () 
-{ 
-	char nom[15];
-	int con;
-	printf ("ingresa tu nombre");
-	scanf ("%c", &nom);
-	if (nom = root){
-		printf("tu nombre es correcto");
-	}
-	else if(nom=x){
-		printf("tu nombres incorrecto");
-    }
-	printf("ingresa la contraseña");
-	scanf ("%c", &con);
-	if (con==1234){
-		printf("tu contraseña es correcta");
-	}
-	else if(con==2){
-		printf("tu contraseña es incorrecta");
-    }
+int main() {
+    char nom[20];
+    char cont[20];
+    int intentos = 3;
+
+    do {
+        printf("Introduce tu nombre: ");
+        scanf("%s", nom);
+
+        printf("Introduce tu contraseña: ");
+        scanf("%s", cont);
+
+        if (strcmp(nom, "root") == 0  strcmp(cont, "1234") == 0) {
+            printf("Bienvenido al sistema.\n");
+        } else {
+            intentos;
+            if (intentos > 0) {
+                printf("Nombre de usuario o contraseña incorrectos. Te quedan %d intentos.\n", intentos);
+            } else {
+                printf("Se ha superado el número de intentos permitido.\n");
+
+            }
+        }
+    } while (intentos > 0);
+
     return 0;
 }
