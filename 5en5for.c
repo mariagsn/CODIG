@@ -6,7 +6,7 @@ printf ("cuantos terminos quieres que se muestren ");
 scanf ("%d", &nm);
  for (i=1; i<=nm; i++)
   {
-  printf(" %d", nm + 5);
+  printf(" %d",i * 5);
   }
   return 0;
 }
