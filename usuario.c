@@ -13,15 +13,16 @@ int main() {
         printf("Introduce tu contraseña: ");
         scanf("%s", cont);
 
-        if (strcmp(nom, "root") == 0  strcmp(cont, "1234") == 0) {
+        if (strcmp(nom, "root") == 0 && strcmp(cont, "1234") == 0) {
             printf("Bienvenido al sistema.\n");
+            break;
         } else {
-            intentos;
+            intentos--;
             if (intentos > 0) {
                 printf("Nombre de usuario o contraseña incorrectos. Te quedan %d intentos.\n", intentos);
             } else {
                 printf("Se ha superado el número de intentos permitido.\n");
-
+                break;
             }
         }
     } while (intentos > 0);
