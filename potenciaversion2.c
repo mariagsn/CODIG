@@ -6,13 +6,13 @@ int pot, num, resul=1;
 
 printf("ingrese el numero que quiere elevar a una potencia \n");
 
-scanf("%d",num);
+scanf("%d",&num);
 
 printf("ingrese a que potencia lo quiere elevar\n");
 
-scanf("%d",pot);
+scanf("%d",&pot);
 
-for(int i=1; i<=pot  i++){
+for(int i=1; i<=pot ; i++){
 
 resul*=num;
 
