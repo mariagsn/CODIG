@@ -1,15 +1,15 @@
 #include <stdio.h>
 
 int main() {
-    int i = 0
-    int num
+    int i = 0;
+    int num;
     int suma = 0;
     int menor, mayor;
 
-    //Escribe 10 números
+    // Pedir 10 números
     while (i < 10) {
         printf("Introduce el número %d: ", i + 1);
-        scanf("%d", num)
+        scanf("%d", &num);
         
         
         suma += num;
@@ -26,7 +26,8 @@ int main() {
                 menor = num;
             }
         }
-   
+        
+        i++;
     }
 
     
