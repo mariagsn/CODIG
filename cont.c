@@ -1,4 +1,4 @@
-#include <stdio.h> //VERSION 2 EXAMEN PRACTICO 13-05-2024
+#include <stdio.h>//VERSION 1 EXAMEN PRACTICO 13-05-2024
 #include <string.h>
 
 int main() {
@@ -13,13 +13,13 @@ int main() {
         printf("Introduce tu contraseña: ");
         scanf("%s", cont);
 
-        if (strcmp(nom, "maria") == 0 && strcmp(cont, "2b38") == 0) {
+        if (strcmp(nom, "root") == 0 && strcmp(cont, "1234") == 0) {
             printf("Bienvenido al sistema.\n");
             break;
         } else {
             intentos--;
             if (intentos > 0) {
-                printf("Nombre de usuario o contrasea incorrectos. Te quedan %d intentos.\n", intentos);
+                printf("Nombre de usuario o contraseña incorrectos. Te quedan %d intentos.\n", intentos);
             } else {
                 printf("Se ha superado el número de intentos permitido.\n");
                 break;
