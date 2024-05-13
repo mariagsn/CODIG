@@ -1,6 +1,6 @@
-#include <stdio.h> //VERSION 3 EXAMEN PRACTICO 13-05-2024
+#include <stdio.h> //VERSION 3 y 4 EXAMEN PRACTICO 13-05-2024
 #include <string.h>
-
+#include <string.h>
 int main() {
     char nom[20];
     char cont[20];
