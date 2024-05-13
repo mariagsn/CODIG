@@ -27,19 +27,24 @@ int main() {
                 break;
             }
         }
-    } while (cant != 0);
-    printf ("para terminar introduce la cantidad de 0 \n\n");
+    } while (cant > 0);
+        printf ("para terminar introduce la cantidad de 0 \n\n");
       printf("Muy bien, Ingresa la cantidad de tus articulos vendidos  ");
         scanf  ("%d", &pro);
+        while (pro!=0) {
         printf ("de que precio fueron? $");
         scanf ("%d", &cant);
-        if (pro < 0||cant < 0 ){
+             if (pro < 0||cant < 0 ){
             printf ("lo siento, tus cantidades son negativas, Ingresa otra cantidad .\n\n");
            } else {
                 float imp=pro*cant;
                 importe +=imp;
-            }
-       printf ("tu total de los productos es de %d pesos ", importe); 
+           }
+        printf("\nCantidad: ");
+        scanf("%d", &pro);
+    
+         }
+       printf ( "tu total de los productos es de %.d\n pesos ", importe); 
 
     return 0;
 }
