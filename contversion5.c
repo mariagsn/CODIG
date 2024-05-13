@@ -1,7 +1,7 @@
 #include <stdio.h> //VERSION 3 y 4 EXAMEN PRACTICO 13-05-2024 ESTAN SEPARADAS LAS VERSIONES PERO ESTAN GUARDADAS COMO "CONT" "CONTVERSION2" "CONTVERSION3" "CONTVERSION5"
 #include <string.h>
- float TOTAL(int pro,cant){
-     pro*cant;
+ float TOTAL(int pro, float cant){
+     return pro*cant;
  }
 
 int main() {
@@ -30,19 +30,24 @@ int main() {
                 break;
             }
         }
-    } while (cant != 0);
-    printf ("para terminar introduce la cantidad de 0 \n\n");
+    } while (cant > 0);
+        printf ("para terminar introduce la cantidad de 0 \n\n");
       printf("Muy bien, Ingresa la cantidad de tus articulos vendidos  ");
         scanf  ("%d", &pro);
+        while (pro!=0) {
         printf ("de que precio fueron? $");
         scanf ("%d", &cant);
-        if (pro < 0||cant < 0 ){
+             if (pro < 0||cant < 0 ){
             printf ("lo siento, tus cantidades son negativas, Ingresa otra cantidad .\n\n");
            } else {
                 float imp=TOTAL (pro,cant);
                 importe +=imp;
             }
-       printf ("tu total de los productos es de %d pesos ", importe); 
+        printf("\nCantidad: ");
+        scanf("%d", &pro);
+    
+         }
+       printf ( "tu total de los productos es de %.d\n pesos ", importe); 
 
     return 0;
 }
